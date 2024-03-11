@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Flex
+        </title>
+        <style>
+            .one{
+                display:grid;
+                background-color: aqua;
+                padding: 50px;
+                text-align: center; 
+                font-size: xx-large;
+                text-align: center;   
+            }
+            .two{
+                background-color:aqua;
+                padding: 105px;
+                text-align: center;  
+                height:300px;
+                width:200px;
+                flex-wrap: wrap;
+                display: inline-block;
+                padding: 100px;
+
+            }
+            .main{
+                display:flex;
+                padding:10px;
+                grid-template-columns:auto auto auto ;
+                justify-content: space-evenly;
+            }
+        </style>
+    <body>
+        <div class="one"  >Using Flex</div>
+        <div class="main">
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        </div>
+        <div class="one"></div>
+    </body>
+    </head>
+</html>

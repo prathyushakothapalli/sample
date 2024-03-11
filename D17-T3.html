@@ -1,0 +1,45 @@
+<div>
+    <head>
+        <title>Animation image rotate</title>
+        <style>
+            .one:hover ~img{
+                transform: rotate(200deg);
+                transition: 2s;
+            }
+            .two:hover ~img{
+                transform: rotate(100deg);
+                transition: 2s;
+            }
+            .three:hover ~img{
+                transform: rotate(360deg);
+                transition: 2s;
+            }
+            .main{
+                display: flex;
+                width:400px;
+                height:350px;
+                flex-wrap: wrap;
+            }
+            .one{
+                margin: 1.5%;
+            }
+            .two{
+                margin: 1.5%;
+            }
+            .three{
+                margin: 1.5%;
+            }
+            img{
+                margin-left: 30%;
+            }
+        </style>
+    </head>
+    <body>
+<div class="main">
+        <div class="one"><button>Rotate 200 deg</button></div>
+        <div class="two"><button>Rotate 100 deg</button></div>
+        <div class="three"><button>Rotate 360 deg</button></div>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/best-animated-movies-03-turning-red-1669748213.jpeg"width=250 height="200">
+    </body>
+</div>
+</html>

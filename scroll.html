@@ -1,0 +1,187 @@
+<html>
+    <head>
+       <title>Resume using pseduo elements</title> 
+    </head>
+    <style>
+        .main div{
+            display:none;
+        }
+        .main div:target{
+            display:inline-block;
+            overflow: scroll;
+            height:300px;
+            width:1000px;
+        }
+        .main2 div{
+        display:flex;
+    }
+    .main2 div:target{
+        display: inline-block;
+        overflow: scroll;
+        border: 5px solid blue;
+        height:300px;
+        width:1000px;
+    }
+        #p{
+            background-color:lightgreen;
+        }
+        #c{
+            background-color: lightgreen;
+        }
+        #h{
+            background-color: lightgreen;
+        }
+        #d{
+            background-color: lightgreen;
+        }
+        #h ol{
+            overflow: scroll;
+            height:150px;
+            width:350px;
+        }
+        h1::first-letter{
+            color:red;
+            font-size:xxx-large;
+        }
+        button:link{
+            color: brown;
+        }
+        button:visited{
+            color: green;
+        }
+        button:hover{
+            color:yellow;
+        }
+        button:active{
+            color:blue;
+        }
+        img{
+            margin-top: -15%;
+            margin-left: 80%;
+            border-radius: 80%;
+            width:200px;
+            height:200px;
+        }
+        button{
+            padding:5px;
+            width:150px;
+            height:50px;
+            margin: 5px;
+            background-color: black;
+            color:white;
+            border-radius: 10%;
+        }
+        #s{
+            overflow: scroll;
+            background-color: lightgreen;
+        }
+        #t{
+        overflow: scroll;
+        border: 2px solid black;
+        background-color: lightgreen;
+        width: 400px;
+        height:300px;
+        display: inline-block;
+        margin-top: -10px;
+        margin-left:10%;
+        }
+        #n{
+            overflow: scroll;
+        border: 2px solid black;
+        background-color: lightgreen;
+        width: 400px;
+        height:300px;
+        display: inline-block;
+        }
+    </style>
+    <body>
+<div class="main">
+        <nav>
+            <a href="#p"><button>Profile</button></a>
+            <a href="#c"><button>Carrier Obejective</button></a>
+            <a href="#h"><button>Hobbies</button></a>
+            <a href="#s"><button>Skills</button></a>
+            <a href="#d"><button>Decleration</button></a>
+        </nav>
+        <hr>
+        <div id="p">
+            <h1>Profile</h1>
+            <hr>
+            <p><b>Name :</b> Kothapalli Prathyusha Rani </p>
+            <p><b>Contact :123456789</b>  </p>
+            <p><b>Email :</b> resume@gmail.com </p>
+            <a href=""><button>Linkdin</button></a>
+            <a href=""><button>GitHub</button></a>
+            <a href=""><button>Gmail</button></a> 
+            <img src="./sindu.jpg"width=150px height=150px>
+        </div>
+        <div id="c">
+            <h1>Carrier Objective</h1>
+            <hr>
+        <p>I am seeking employment with a company where I can grow professionally and personally,challenging opportunities where I can fully use my skills for the success of the organization.
+            I want to succeed in a stimulating and challenging environment that will provide me with advancement opportunities.</p>
+        </div>
+        <div id="h">
+            <h1>Hobbies</h1>
+            <hr>
+            <ol>
+                <li> Volunteering</li>
+                <li>Sports or Physical Activities </li>
+                <li> Creative Pursuits</li>
+                <li>Reading </li>
+                <li>Technology </li>
+                <li>Language Learning </li>
+                <li>Travel</li>
+                <li>Leadership Roles</li>
+                <li>Cooking or Baking</li>
+                <li>Gaming</li>
+            </ol>    
+        </div> 
+        <div id="s">
+            <h1>Skills</h1>
+            <hr>
+            <br>
+                <span id="t">
+                <h1>Technical Skills :</h1>
+                <ol>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Java Script</li>
+                    <li> Node Js</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Dbms</li>
+                    <li>My Sql</li>
+                    <li>Pandas</li>
+                    <li>Numpy</li>
+                </ol>
+                </span>
+                <span id="n">
+                <h1>Non Techinical Skills :</h1>
+                <ol>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem-Solving</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Leadership</li>
+                    <li>Creativity</li>
+                    <li>Interpersonal Skills</li>
+                    <li>Emotional Intelligence</li>
+                    <li>Critical Thinking</li>
+                    <li>Logicalcal Thinking</li>
+                </ol>
+                </span>
+</div>
+                <div id="d"><h1>Decleration</h1>
+<p>I hereby declare that all the information provided above is true and accurate to the best of my knowledge. I understand that any false statement or omission may result in disqualification from consideration for employment or termination if employed.</p>
+<a href="" download><button>Download</button></a>
+</div>
+</div>
+    </body>
+</html>

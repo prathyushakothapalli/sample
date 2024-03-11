@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Displaying photos using grid
+        </title>
+        <style>
+            .one{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .two{
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .three{
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 6;
+            }
+            .four{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 6;
+            }
+            .five{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 6;
+                grid-row-end: 9;
+            }
+
+            .main{
+                display:grid;
+                grid-template-columns:auto auto auto ;
+                 column-gap: 5px;
+                row-gap: 5px;
+            }
+
+        </style>
+    <body>
+        <div class="main">
+        <div class="one"><img src="https://deadline.com/wp-content/uploads/2023/10/encanto-maribel-disney.jpg" height="200" width="400"></div>
+        <div class="two"><img src="https://wallpapers.com/images/featured/encanto-luisa-zrpwuuxajuucckp5.jpg" height="200" width="400" ></div>
+        <div class="three"><img src="https://images.squarespace-cdn.com/content/v1/5b8f76c5cef37223010ad9d7/dba9132a-ca44-466e-b097-7bf0380831ba/Encanto+-+Dolores+Poster.jpg?format=750w"height="500" width="800"></div>
+        <div class="four"><img src=""height="300" width=800></div> 
+        <div class="five"><img src="https://news.umanitoba.ca/wp-content/uploads/2022/04/Encanto-UMToday.jpg" height="350" width=800></div>
+        <div class="six"><img src="https://d.newsweek.com/en/full/1969999/encanto-screenshot.png?w=1200&f=9e0167b126f0a258e5f8b00515a7baca" height="350" width=800></div>
+    </body>
+    </head>
+</html> 
